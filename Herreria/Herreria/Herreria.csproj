@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="asets\Creacion de tablas y insert.txt" />
+    <Content Include="asets\fondoTienda.jpg" />
+    <Content Include="asets\formularioAdministrador.jpg" />
+    <Content Include="asets\FormularioPrincipal.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
