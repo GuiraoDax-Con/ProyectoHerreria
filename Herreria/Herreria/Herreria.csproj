@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asets\Scripts\DATA\DATA_USUARIOS.sql" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,10 +101,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="asets\Creacion_de_tablas_e_insert.txt" />
     <Content Include="asets\fondoTienda.jpg" />
     <Content Include="asets\formularioAdministrador.jpg" />
     <Content Include="asets\FormularioPrincipal.jpeg" />
+    <Content Include="asets\Scripts\Creacion_de_tablas_e_insert.txt" />
+    <Content Include="asets\Scripts\TABLES\TABLE_EQUIPAMIENTO.sql" />
+    <Content Include="asets\Scripts\TABLES\TABLE_MATERIAS_PRIMAS.sql" />
+    <Content Include="asets\Scripts\TABLES\TABLE_MATERIAS_PRIMAS_EQUIPAMIENTO.sql" />
+    <Content Include="asets\Scripts\TABLES\TABLE_USUARIOS.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
