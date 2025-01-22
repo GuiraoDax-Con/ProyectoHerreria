@@ -85,6 +85,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="asets\ASETS.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,7 +100,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="asets\Creacion de tablas y insert.txt" />
+    <Content Include="asets\Creacion_de_tablas_e_insert.txt" />
     <Content Include="asets\fondoTienda.jpg" />
     <Content Include="asets\formularioAdministrador.jpg" />
     <Content Include="asets\FormularioPrincipal.jpeg" />
