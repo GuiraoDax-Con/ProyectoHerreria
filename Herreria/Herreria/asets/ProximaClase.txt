@@ -1,0 +1,5 @@
+Elaboracion--> Vamos a poner todo el equipamiento a 0 y vamosa realizar UPDATE del equipameinto segun se vaya elaborando.
+Base de datos-->añadir el quipamiento por defecto que se puede elaborar.
+hacer una arrayList para registrar lo que se elebora cada vez.
+Con el cliente lo hacemos de modo similar
+ 

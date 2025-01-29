@@ -21,5 +21,21 @@ namespace Herreria
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MateriasPrimas materiasPrimas = new MateriasPrimas();
+            materiasPrimas.Show();
+            this.Hide();
+
+
+        }
+
+        private void btElaborar_Click(object sender, EventArgs e)
+        {
+            Elaboracion elaboracion = new Elaboracion();
+            elaboracion.Show();
+            this.Hide();
+        }
     }
 }
