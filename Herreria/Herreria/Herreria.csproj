@@ -171,6 +171,10 @@
     <Content Include="asets\formularioAdministrador.jpg" />
     <Content Include="asets\FormularioPrincipal.jpeg" />
     <Content Include="asets\Scripts\Creacion_de_tablas_e_insert.txt" />
+    <Content Include="asets\Scripts\DATA\dbo.EQUIPAMIENTO.data.sql" />
+    <Content Include="asets\Scripts\DATA\dbo.MATERIAS_PRIMAS.data.sql" />
+    <Content Include="asets\Scripts\DATA\dbo.MATERIAS_PRIMAS_EQUIPAMIENTO.data.sql" />
+    <Content Include="asets\Scripts\DATA\dbo.USUARIO.data.sql" />
     <Content Include="asets\Scripts\TABLES\TABLE_EQUIPAMIENTO.sql" />
     <Content Include="asets\Scripts\TABLES\TABLE_MATERIAS_PRIMAS.sql" />
     <Content Include="asets\Scripts\TABLES\TABLE_MATERIAS_PRIMAS_EQUIPAMIENTO.sql" />
