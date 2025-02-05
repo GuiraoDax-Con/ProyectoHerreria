@@ -1,30 +1,117 @@
-﻿-- Relacionar equipamiento con materiales
-INSERT INTO [dbo].[MATERIAS_PRIMAS_EQUIPAMIENTO] (id_materia_prima, id_equipamiento, cantidad_necesaria)
+﻿INSERT INTO [dbo].[MATERIAS_PRIMAS_EQUIPAMIENTO] (id_materia_prima, id_equipamiento, cantidad_necesaria)
 VALUES
-(7, 1, 5),  -- Espada larga de hierro
-(8, 1, 3),  -- Espada larga de acero
-(7, 2, 4),  -- Espada corta de hierro
-(8, 3, 5),  -- Hacha de batalla de acero
-(9, 3, 3),  -- Hacha de batalla de mitrhil
-(8, 4, 6),  -- Martillo de guerra de acero
-(6, 5, 3),  -- Lanza de bronce
-(5, 6, 2),  -- Daga de pieles
-(1, 7, 3),  -- Arco largo de madera
-(1, 8, 2),  -- Arco corto de madera
-(6, 9, 4),  -- Ballesta ligera de bronce
-(8, 10, 7), -- Ballesta pesada de acero
-(4, 11, 5), -- Armadura acolchada de tela
-(3, 12, 6), -- Armadura de cuero
-(7, 13, 5), -- Cota de escamas de hierro
-(7, 14, 6), -- Cota de malla de hierro
-(8, 15, 7), -- Coraza de acero
-(8, 16, 10), -- Armadura de placas de acero
-(1, 17, 4), -- Escudo de madera
-(8, 18, 6), -- Escudo de acero
-(8, 19, 5), -- Espada bastarda de acero
-(7, 20, 4), -- Maza de guerra de hierro
-(7, 21, 5), -- Pica de hierro
-(8, 22, 6), -- Espadón de acero
-(11, 23, 3), -- Daga de plata
-(7, 24, 2), -- Hacha arrojadiza de hierro
-(9, 25, 5); -- Escudo de mitrhil
+-- Espada larga
+(7, 1, 3.0),  -- Hierro
+(8, 1, 1.0),  -- Acero
+(12, 1, 0.2), -- Oro
+
+-- Espada corta
+(7, 2, 2.0),  -- Hierro
+(8, 2, 0.5),  -- Acero
+(12, 2, 0.1), -- Oro
+
+-- Hacha de batalla
+(7, 3, 3.0),  -- Hierro
+(8, 3, 1.5),  -- Acero
+(13, 3, 0.5), -- Hueso
+
+-- Martillo de guerra
+(7, 4, 4.0),  -- Hierro
+(8, 4, 1.0),  -- Acero
+(12, 4, 0.3), -- Oro
+
+-- Lanza
+(1, 5, 1.5),  -- Madera
+(7, 5, 1.0),  -- Hierro
+(13, 5, 0.3), -- Hueso
+
+-- Daga
+(7, 6, 0.5),  -- Hierro
+(11, 6, 0.2), -- Plata
+
+-- Arco largo
+(1, 7, 1.5),  -- Madera
+(3, 7, 0.5),  -- Cuero
+(13, 7, 0.3), -- Hueso
+
+-- Arco corto
+(1, 8, 1.0),  -- Madera
+(3, 8, 0.3),  -- Cuero
+(13, 8, 0.2), -- Hueso
+
+-- Ballesta ligera
+(1, 9, 2.0),  -- Madera
+(7, 9, 1.5),  -- Hierro
+(12, 9, 0.2), -- Oro
+
+-- Ballesta pesada
+(1, 10, 3.0), -- Madera
+(7, 10, 3.0), -- Hierro
+(13, 10, 0.5), -- Hueso
+
+-- Armadura acolchada
+(4, 11, 5.0), -- Tela
+(13, 11, 1.0), -- Hueso
+
+-- Armadura de cuero
+(3, 12, 7.0), -- Cuero
+(4, 12, 2.0), -- Tela
+
+-- Cota de escamas
+(7, 13, 10.0), -- Hierro
+(8, 13, 5.0),  -- Acero
+(12, 13, 0.5), -- Oro
+
+-- Cota de malla
+(7, 14, 15.0), -- Hierro
+(8, 14, 5.0),  -- Acero
+(12, 14, 1.0), -- Oro
+
+-- Coraza
+(8, 15, 20.0), -- Acero
+(12, 15, 2.0), -- Oro
+
+-- Armadura de placas
+(8, 16, 30.0), -- Acero
+(9, 16, 5.0),  -- Mitrhil
+(12, 16, 3.0), -- Oro
+
+-- Escudo de madera
+(1, 17, 6.0), -- Madera
+(4, 17, 1.0), -- Tela
+
+-- Escudo de acero
+(8, 18, 8.0), -- Acero
+(12, 18, 1.0), -- Oro
+
+-- Espada bastarda
+(7, 19, 3.0), -- Hierro
+(8, 19, 1.0), -- Acero
+(12, 19, 0.4), -- Oro
+
+-- Maza de guerra
+(7, 20, 2.5), -- Hierro
+(8, 20, 1.0), -- Acero
+(13, 20, 0.5), -- Hueso
+
+-- Pica
+(1, 21, 2.0), -- Madera
+(7, 21, 4.0), -- Hierro
+(13, 21, 0.8), -- Hueso
+
+-- Espadón
+(7, 22, 4.0), -- Hierro
+(8, 22, 1.5), -- Acero
+(12, 22, 1.0), -- Oro
+
+-- Daga de plata
+(11, 23, 0.8), -- Plata
+(12, 23, 0.2), -- Oro
+
+-- Hacha arrojadiza
+(7, 24, 1.0), -- Hierro
+(13, 24, 0.5), -- Hueso
+
+-- Escudo de mitrhil
+(9, 25, 5.0), -- Mitrhil
+(12, 25, 1.5); -- Oro

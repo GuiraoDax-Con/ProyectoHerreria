@@ -37,23 +37,29 @@
             this.eQUIPAMIENTOTableAdapter = new Herreria.EquipamientoDataSetTableAdapters.EQUIPAMIENTOTableAdapter();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.equipamientoDataSet1 = new Herreria.EquipamientoDataSet1();
-            this.equipamientoDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eQUIPAMIENTOBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.eQUIPAMIENTOTableAdapter1 = new Herreria.EquipamientoDataSet1TableAdapters.EQUIPAMIENTOTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eQUIPAMIENTOBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.equipamientoDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipamientoDataSet1 = new Herreria.EquipamientoDataSet1();
+            this.eQUIPAMIENTOTableAdapter1 = new Herreria.EquipamientoDataSet1TableAdapters.EQUIPAMIENTOTableAdapter();
+            this.cbArmaduras = new System.Windows.Forms.ComboBox();
+            this.label = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btElaboracion = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,32 +107,14 @@
             this.tipoDataGridViewTextBoxColumn,
             this.pesoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.eQUIPAMIENTOBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(81, 501);
+            this.dataGridView1.Location = new System.Drawing.Point(100, 501);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(542, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 207);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // equipamientoDataSet1
-            // 
-            this.equipamientoDataSet1.DataSetName = "EquipamientoDataSet1";
-            this.equipamientoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // equipamientoDataSet1BindingSource
-            // 
-            this.equipamientoDataSet1BindingSource.DataSource = this.equipamientoDataSet1;
-            this.equipamientoDataSet1BindingSource.Position = 0;
-            // 
-            // eQUIPAMIENTOBindingSource1
-            // 
-            this.eQUIPAMIENTOBindingSource1.DataMember = "EQUIPAMIENTO";
-            this.eQUIPAMIENTOBindingSource1.DataSource = this.equipamientoDataSet1BindingSource;
-            // 
-            // eQUIPAMIENTOTableAdapter1
-            // 
-            this.eQUIPAMIENTOTableAdapter1.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -144,6 +132,7 @@
             this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nombreDataGridViewTextBoxColumn.Width = 125;
             // 
             // cantidadDataGridViewTextBoxColumn
             // 
@@ -181,6 +170,90 @@
             this.pesoDataGridViewTextBoxColumn.ReadOnly = true;
             this.pesoDataGridViewTextBoxColumn.Width = 50;
             // 
+            // eQUIPAMIENTOBindingSource1
+            // 
+            this.eQUIPAMIENTOBindingSource1.DataMember = "EQUIPAMIENTO";
+            this.eQUIPAMIENTOBindingSource1.DataSource = this.equipamientoDataSet1BindingSource;
+            // 
+            // equipamientoDataSet1BindingSource
+            // 
+            this.equipamientoDataSet1BindingSource.DataSource = this.equipamientoDataSet1;
+            this.equipamientoDataSet1BindingSource.Position = 0;
+            // 
+            // equipamientoDataSet1
+            // 
+            this.equipamientoDataSet1.DataSetName = "EquipamientoDataSet1";
+            this.equipamientoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eQUIPAMIENTOTableAdapter1
+            // 
+            this.eQUIPAMIENTOTableAdapter1.ClearBeforeFill = true;
+            // 
+            // cbArmaduras
+            // 
+            this.cbArmaduras.FormattingEnabled = true;
+            this.cbArmaduras.Items.AddRange(new object[] {
+            "Armadura ligera",
+            "Armadura intermedia",
+            "Armadura pesada",
+            "Arma a distancia",
+            "Arma cuerpo a cuerpo",
+            "Escudos"});
+            this.cbArmaduras.Location = new System.Drawing.Point(784, 560);
+            this.cbArmaduras.Name = "cbArmaduras";
+            this.cbArmaduras.Size = new System.Drawing.Size(121, 24);
+            this.cbArmaduras.TabIndex = 2;
+            this.cbArmaduras.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(746, 529);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(219, 22);
+            this.label.TabIndex = 3;
+            this.label.Text = "Tipo Equipamiento:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(784, 624);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 22);
+            this.textBox1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(785, 599);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 22);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "CANTIDAD:";
+            // 
+            // btElaboracion
+            // 
+            this.btElaboracion.Location = new System.Drawing.Point(779, 673);
+            this.btElaboracion.Name = "btElaboracion";
+            this.btElaboracion.Size = new System.Drawing.Size(126, 23);
+            this.btElaboracion.TabIndex = 6;
+            this.btElaboracion.Text = "ELABORACIÓN";
+            this.btElaboracion.UseVisualStyleBackColor = true;
+            this.btElaboracion.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(491, 714);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Elaboracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,6 +261,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1118, 780);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btElaboracion);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.cbArmaduras);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Elaboracion";
@@ -197,9 +276,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +303,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn precioventaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pesoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cbArmaduras;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btElaboracion;
+        private System.Windows.Forms.Button button1;
     }
 }
