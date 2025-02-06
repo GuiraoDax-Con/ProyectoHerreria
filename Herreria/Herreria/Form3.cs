@@ -53,7 +53,7 @@ namespace Herreria
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Equipameinto actualizado correctamente.");
+                            MessageBox.Show("Equipamiento actualizado correctamente.");
                             this.eQUIPAMIENTOTableAdapter.Fill(this.equipamientoDataSet1.EQUIPAMIENTO);
                         }
                         else
@@ -62,7 +62,7 @@ namespace Herreria
                         }
                     }
                 }
-                MessageBox.Show("Elaboración completada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Compra realizada.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Verificar si el producto ya existe en la lista
                 var productoExistente = listaEquipamiento.FirstOrDefault(equip => equip.Id == idEquipamiento);
                 if (productoExistente != null)
@@ -126,12 +126,12 @@ namespace Herreria
                 }
                 else
                 {
-                    MessageBox.Show("El origen de datos del DataGridView no es un DataTable.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El origen de datos de los datos es erroneo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Por favor, seleccione un elemento del ComboBox.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, seleccione un elemento", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

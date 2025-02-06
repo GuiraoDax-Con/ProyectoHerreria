@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.equipamientoDataSet1 = new Herreria.EquipamientoDataSet1();
-            this.equipamientoDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipamientoDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.eQUIPAMIENTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eQUIPAMIENTOTableAdapter = new Herreria.EquipamientoDataSet1TableAdapters.EQUIPAMIENTOTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eQUIPAMIENTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipamientoDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.equipamientoDataSet1 = new Herreria.EquipamientoDataSet1();
+            this.equipamientoDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eQUIPAMIENTOTableAdapter = new Herreria.EquipamientoDataSet1TableAdapters.EQUIPAMIENTOTableAdapter();
             this.label = new System.Windows.Forms.Label();
             this.cbEquipamiento = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,10 +51,10 @@
             this.lbUsur = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,6 +73,15 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSalmon;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.OrangeRed;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -81,37 +91,13 @@
             this.tipoDataGridViewTextBoxColumn,
             this.pesoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.eQUIPAMIENTOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(264, 175);
+            this.dataGridView1.Location = new System.Drawing.Point(260, 175);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(415, 174);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // equipamientoDataSet1
-            // 
-            this.equipamientoDataSet1.DataSetName = "EquipamientoDataSet1";
-            this.equipamientoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // equipamientoDataSet1BindingSource
-            // 
-            this.equipamientoDataSet1BindingSource.DataSource = this.equipamientoDataSet1;
-            this.equipamientoDataSet1BindingSource.Position = 0;
-            // 
-            // equipamientoDataSet1BindingSource1
-            // 
-            this.equipamientoDataSet1BindingSource1.DataSource = this.equipamientoDataSet1;
-            this.equipamientoDataSet1BindingSource1.Position = 0;
-            // 
-            // eQUIPAMIENTOBindingSource
-            // 
-            this.eQUIPAMIENTOBindingSource.DataMember = "EQUIPAMIENTO";
-            this.eQUIPAMIENTOBindingSource.DataSource = this.equipamientoDataSet1BindingSource1;
-            // 
-            // eQUIPAMIENTOTableAdapter
-            // 
-            this.eQUIPAMIENTOTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -167,6 +153,30 @@
             this.pesoDataGridViewTextBoxColumn.ReadOnly = true;
             this.pesoDataGridViewTextBoxColumn.Width = 50;
             // 
+            // eQUIPAMIENTOBindingSource
+            // 
+            this.eQUIPAMIENTOBindingSource.DataMember = "EQUIPAMIENTO";
+            this.eQUIPAMIENTOBindingSource.DataSource = this.equipamientoDataSet1BindingSource1;
+            // 
+            // equipamientoDataSet1BindingSource1
+            // 
+            this.equipamientoDataSet1BindingSource1.DataSource = this.equipamientoDataSet1;
+            this.equipamientoDataSet1BindingSource1.Position = 0;
+            // 
+            // equipamientoDataSet1
+            // 
+            this.equipamientoDataSet1.DataSetName = "EquipamientoDataSet1";
+            this.equipamientoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // equipamientoDataSet1BindingSource
+            // 
+            this.equipamientoDataSet1BindingSource.DataSource = this.equipamientoDataSet1;
+            this.equipamientoDataSet1BindingSource.Position = 0;
+            // 
+            // eQUIPAMIENTOTableAdapter
+            // 
+            this.eQUIPAMIENTOTableAdapter.ClearBeforeFill = true;
+            // 
             // label
             // 
             this.label.AutoSize = true;
@@ -197,10 +207,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(711, 255);
+            this.button1.Location = new System.Drawing.Point(711, 246);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 25);
+            this.button1.Size = new System.Drawing.Size(99, 37);
             this.button1.TabIndex = 6;
             this.button1.Text = "COMPRAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -209,10 +220,11 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Firebrick;
+            this.button2.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(711, 298);
+            this.button2.Location = new System.Drawing.Point(711, 289);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 27);
+            this.button2.Size = new System.Drawing.Size(99, 36);
             this.button2.TabIndex = 7;
             this.button2.Text = "FACTURA";
             this.button2.UseVisualStyleBackColor = false;
@@ -230,12 +242,16 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(468, 355);
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(711, 331);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(99, 29);
             this.button3.TabIndex = 9;
             this.button3.Text = "CERRAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form3
@@ -257,10 +273,10 @@
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet1BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eQUIPAMIENTOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

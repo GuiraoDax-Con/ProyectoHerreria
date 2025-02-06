@@ -37,22 +37,28 @@
             // 
             // btMateriaPrima
             // 
-            this.btMateriaPrima.Location = new System.Drawing.Point(348, 207);
+            this.btMateriaPrima.BackColor = System.Drawing.Color.Firebrick;
+            this.btMateriaPrima.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMateriaPrima.ForeColor = System.Drawing.Color.White;
+            this.btMateriaPrima.Location = new System.Drawing.Point(327, 207);
             this.btMateriaPrima.Name = "btMateriaPrima";
-            this.btMateriaPrima.Size = new System.Drawing.Size(112, 41);
+            this.btMateriaPrima.Size = new System.Drawing.Size(171, 41);
             this.btMateriaPrima.TabIndex = 2;
             this.btMateriaPrima.Text = "Comprar M.P.";
-            this.btMateriaPrima.UseVisualStyleBackColor = true;
+            this.btMateriaPrima.UseVisualStyleBackColor = false;
             this.btMateriaPrima.Click += new System.EventHandler(this.button1_Click);
             // 
             // btElaborar
             // 
-            this.btElaborar.Location = new System.Drawing.Point(525, 207);
+            this.btElaborar.BackColor = System.Drawing.Color.Firebrick;
+            this.btElaborar.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btElaborar.ForeColor = System.Drawing.Color.White;
+            this.btElaborar.Location = new System.Drawing.Point(576, 207);
             this.btElaborar.Name = "btElaborar";
-            this.btElaborar.Size = new System.Drawing.Size(118, 41);
+            this.btElaborar.Size = new System.Drawing.Size(138, 41);
             this.btElaborar.TabIndex = 3;
-            this.btElaborar.Text = "Elaboración";
-            this.btElaborar.UseVisualStyleBackColor = true;
+            this.btElaborar.Text = "FABRICAR";
+            this.btElaborar.UseVisualStyleBackColor = false;
             this.btElaborar.Click += new System.EventHandler(this.btElaborar_Click);
             // 
             // label1

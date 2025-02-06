@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Elaboracion));
             this.label1 = new System.Windows.Forms.Label();
             this.equipamientoDataSet = new Herreria.EquipamientoDataSet();
@@ -96,6 +97,15 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSalmon;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.OrangeRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -199,36 +209,45 @@
             "Escudos"});
             this.cbTipoEquipamiento.Location = new System.Drawing.Point(784, 560);
             this.cbTipoEquipamiento.Name = "cbTipoEquipamiento";
-            this.cbTipoEquipamiento.Size = new System.Drawing.Size(121, 24);
+            this.cbTipoEquipamiento.Size = new System.Drawing.Size(126, 24);
             this.cbTipoEquipamiento.TabIndex = 2;
             this.cbTipoEquipamiento.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label
             // 
+            this.label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label.AutoSize = true;
             this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(746, 529);
+            this.label.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(705, 526);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(201, 22);
+            this.label.Size = new System.Drawing.Size(282, 31);
             this.label.TabIndex = 3;
             this.label.Text = "Tipo Equipamiento:";
             // 
             // btElaboracion
             // 
+            this.btElaboracion.BackColor = System.Drawing.Color.Firebrick;
+            this.btElaboracion.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btElaboracion.ForeColor = System.Drawing.Color.White;
             this.btElaboracion.Location = new System.Drawing.Point(784, 601);
             this.btElaboracion.Name = "btElaboracion";
-            this.btElaboracion.Size = new System.Drawing.Size(126, 23);
+            this.btElaboracion.Size = new System.Drawing.Size(126, 38);
             this.btElaboracion.TabIndex = 6;
             this.btElaboracion.Text = "ELABORACIÓN";
-            this.btElaboracion.UseVisualStyleBackColor = true;
+            this.btElaboracion.UseVisualStyleBackColor = false;
             this.btElaboracion.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(491, 714);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(784, 645);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(126, 32);
             this.button1.TabIndex = 7;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = true;

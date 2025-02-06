@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MateriasPrimas));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbMateriasPrimas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -58,6 +59,7 @@
             // 
             // cbMateriasPrimas
             // 
+            this.cbMateriasPrimas.BackColor = System.Drawing.Color.White;
             this.cbMateriasPrimas.FormattingEnabled = true;
             this.cbMateriasPrimas.Items.AddRange(new object[] {
             "Madera",
@@ -73,7 +75,7 @@
             "Plata",
             "Oro",
             "Hueso"});
-            this.cbMateriasPrimas.Location = new System.Drawing.Point(698, 280);
+            this.cbMateriasPrimas.Location = new System.Drawing.Point(698, 262);
             this.cbMateriasPrimas.Name = "cbMateriasPrimas";
             this.cbMateriasPrimas.Size = new System.Drawing.Size(121, 24);
             this.cbMateriasPrimas.TabIndex = 0;
@@ -91,26 +93,32 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(698, 221);
+            this.txtCantidad.Location = new System.Drawing.Point(698, 212);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(121, 22);
             this.txtCantidad.TabIndex = 2;
             // 
             // btCompraMateriaPrima
             // 
-            this.btCompraMateriaPrima.Location = new System.Drawing.Point(698, 310);
+            this.btCompraMateriaPrima.BackColor = System.Drawing.Color.Firebrick;
+            this.btCompraMateriaPrima.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCompraMateriaPrima.ForeColor = System.Drawing.Color.White;
+            this.btCompraMateriaPrima.Location = new System.Drawing.Point(698, 292);
             this.btCompraMateriaPrima.Name = "btCompraMateriaPrima";
             this.btCompraMateriaPrima.Size = new System.Drawing.Size(121, 33);
             this.btCompraMateriaPrima.TabIndex = 3;
             this.btCompraMateriaPrima.Text = "COMPRAR";
-            this.btCompraMateriaPrima.UseVisualStyleBackColor = true;
+            this.btCompraMateriaPrima.UseVisualStyleBackColor = false;
             this.btCompraMateriaPrima.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtVolver
             // 
-            this.BtVolver.Location = new System.Drawing.Point(542, 391);
+            this.BtVolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtVolver.BackgroundImage")));
+            this.BtVolver.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtVolver.ForeColor = System.Drawing.Color.White;
+            this.BtVolver.Location = new System.Drawing.Point(698, 373);
             this.BtVolver.Name = "BtVolver";
-            this.BtVolver.Size = new System.Drawing.Size(103, 33);
+            this.BtVolver.Size = new System.Drawing.Size(121, 31);
             this.BtVolver.TabIndex = 4;
             this.BtVolver.Text = "VOLVER";
             this.BtVolver.UseVisualStyleBackColor = true;
@@ -121,6 +129,16 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSalmon;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.OrangeRed;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -214,7 +232,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(694, 193);
+            this.label3.Location = new System.Drawing.Point(694, 187);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 22);
             this.label3.TabIndex = 7;
@@ -226,7 +244,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(700, 246);
+            this.label4.Location = new System.Drawing.Point(694, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 22);
             this.label4.TabIndex = 8;
@@ -234,12 +252,15 @@
             // 
             // btFactura
             // 
-            this.btFactura.Location = new System.Drawing.Point(698, 349);
+            this.btFactura.BackColor = System.Drawing.Color.Firebrick;
+            this.btFactura.Font = new System.Drawing.Font("Algerian", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFactura.ForeColor = System.Drawing.Color.White;
+            this.btFactura.Location = new System.Drawing.Point(698, 331);
             this.btFactura.Name = "btFactura";
             this.btFactura.Size = new System.Drawing.Size(121, 36);
             this.btFactura.TabIndex = 9;
             this.btFactura.Text = "FACTURA";
-            this.btFactura.UseVisualStyleBackColor = true;
+            this.btFactura.UseVisualStyleBackColor = false;
             this.btFactura.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MateriasPrimas

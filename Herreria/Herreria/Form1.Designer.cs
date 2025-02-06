@@ -38,6 +38,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -49,6 +52,9 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(453, 389);
             this.txtNombre.Name = "txtNombre";
@@ -57,6 +63,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -68,6 +77,9 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(453, 445);
             this.txtPassword.Name = "txtPassword";
@@ -77,14 +89,17 @@
             // 
             // btLogin
             // 
+            this.btLogin.BackColor = System.Drawing.Color.Firebrick;
+            this.btLogin.Cursor = System.Windows.Forms.Cursors.Default;
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogin.ForeColor = System.Drawing.Color.White;
             this.btLogin.Location = new System.Drawing.Point(453, 494);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(225, 44);
             this.btLogin.TabIndex = 4;
             this.btLogin.Text = "INICIAR SESIÓN";
-            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // Form1
