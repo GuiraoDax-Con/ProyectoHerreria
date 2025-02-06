@@ -29,30 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btMateriaPrima = new System.Windows.Forms.Button();
             this.btElaborar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbAdmin = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(412, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Administrador";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(345, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(255, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Meter textbox con datos del administrador";
             // 
             // btMateriaPrima
             // 
@@ -74,6 +55,25 @@
             this.btElaborar.UseVisualStyleBackColor = true;
             this.btElaborar.Click += new System.EventHandler(this.btElaborar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Algerian", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(406, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "ADMINISTRADOR:";
+            // 
+            // lbAdmin
+            // 
+            this.lbAdmin.AutoSize = true;
+            this.lbAdmin.Font = new System.Drawing.Font("Algerian", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAdmin.Location = new System.Drawing.Point(385, 129);
+            this.lbAdmin.Name = "lbAdmin";
+            this.lbAdmin.Size = new System.Drawing.Size(0, 25);
+            this.lbAdmin.TabIndex = 5;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -81,22 +81,22 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1037, 636);
+            this.Controls.Add(this.lbAdmin);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btElaborar);
             this.Controls.Add(this.btMateriaPrima);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btMateriaPrima;
         private System.Windows.Forms.Button btElaborar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbAdmin;
     }
 }

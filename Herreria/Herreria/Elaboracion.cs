@@ -13,7 +13,9 @@ namespace Herreria
 {
     public partial class Elaboracion : Form
     {
+        Equipamiento equipamiento = new Equipamiento();
         private DataGridViewRow objetosSeleccionado = null;
+        List<Equipamiento> listaEquipamiento = new List<Equipamiento>();
         private readonly string connectionString = "Server=(local)\\SQLEXPRESS;Database=master;Integrated Security=SSPI;";
         public Elaboracion()
         {
@@ -41,7 +43,10 @@ namespace Herreria
                 if (row.Selected)
                 {
                     objetosSeleccionado = row;
-                    MessageBox.Show("Objeto seleccionado: " + objetosSeleccionado.Cells[1].Value.ToString());
+                    equipamiento.Id = int.Parse(objetosSeleccionado.Cells[0].Value.ToString());
+                    equipamiento = objetosSeleccionado.DataBoundItem as Equipamiento;
+
+                    //MessageBox.Show("Objeto seleccionado: " + objetosSeleccionado.Cells[1].Value.ToString());
                     break;
                 }
             }
@@ -49,9 +54,9 @@ namespace Herreria
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbArmaduras.SelectedItem != null)
+            if (cbTipoEquipamiento.SelectedItem != null)
             {
-                string filtro = cbArmaduras.SelectedItem.ToString();
+                string filtro = cbTipoEquipamiento.SelectedItem.ToString();
 
                 // Verifica que el DataSource del DataGridView sea un DataTable
                 if (dataGridView1.DataSource is DataTable dataTable)
@@ -74,6 +79,7 @@ namespace Herreria
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 objetosSeleccionado = dataGridView1.SelectedRows[0];
+
                 MessageBox.Show("Objeto seleccionado: " + objetosSeleccionado.Cells[1].Value.ToString());
             }
         }
@@ -99,6 +105,7 @@ namespace Herreria
                             {
                                 MessageBox.Show("Stock actualizado correctamente.");
                                 this.eQUIPAMIENTOTableAdapter1.Fill(this.equipamientoDataSet1.EQUIPAMIENTO);
+
                             }
                             else
                             {
@@ -117,7 +124,7 @@ namespace Herreria
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2("THARIVOL");
             form2.Show();
             this.Hide();
         }
@@ -180,6 +187,13 @@ namespace Herreria
                 MessageBox.Show($"Error al actualizar el peso de las materias primas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+        }
+
+        private void btFactura_Click(object sender, EventArgs e)
+        {
+           
+           
+            listaEquipamiento.Add(equipamiento);
         }
     }
 }

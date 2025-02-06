@@ -12,9 +12,10 @@ namespace Herreria
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(string nombre)
         {
             InitializeComponent();
+            lbAdmin.Text = $"Bienvenido, {nombre}";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,6 +37,11 @@ namespace Herreria
             Elaboracion elaboracion = new Elaboracion();
             elaboracion.Show();
             this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

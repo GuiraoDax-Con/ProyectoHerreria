@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mATERIASPRIMASBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.materiasPrimasDataSetBindingSource)).BeginInit();
@@ -97,9 +98,9 @@
             // 
             // btCompraMateriaPrima
             // 
-            this.btCompraMateriaPrima.Location = new System.Drawing.Point(716, 310);
+            this.btCompraMateriaPrima.Location = new System.Drawing.Point(698, 310);
             this.btCompraMateriaPrima.Name = "btCompraMateriaPrima";
-            this.btCompraMateriaPrima.Size = new System.Drawing.Size(94, 33);
+            this.btCompraMateriaPrima.Size = new System.Drawing.Size(121, 33);
             this.btCompraMateriaPrima.TabIndex = 3;
             this.btCompraMateriaPrima.Text = "COMPRAR";
             this.btCompraMateriaPrima.UseVisualStyleBackColor = true;
@@ -231,6 +232,16 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "MATERIALES";
             // 
+            // btFactura
+            // 
+            this.btFactura.Location = new System.Drawing.Point(698, 349);
+            this.btFactura.Name = "btFactura";
+            this.btFactura.Size = new System.Drawing.Size(121, 36);
+            this.btFactura.TabIndex = 9;
+            this.btFactura.Text = "FACTURA";
+            this.btFactura.UseVisualStyleBackColor = true;
+            this.btFactura.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // MateriasPrimas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -238,6 +249,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1016, 694);
+            this.Controls.Add(this.btFactura);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btFactura;
     }
 }

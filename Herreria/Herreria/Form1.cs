@@ -27,44 +27,55 @@ namespace Herreria
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            string nombre = txtNombre.Text;
-            string pass = txtPassword.Text;
-            string rol;
-
-
-            conection.Open();
-            comando.Connection = conection;
-            comando.CommandText = "SELECT * FROM USUARIO WHERE nombre = @nombre and password = @pass";
-            comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@pass", pass);
-            comando.ExecuteNonQuery();
-            SqlDataReader reader = comando.ExecuteReader();
-
-            if (reader.Read())
+            try
             {
-                nombre = reader.GetString(1);
-                pass = reader.GetString(2);
-                rol = reader.GetString(3);
-                MessageBox.Show("Bienvenido a la herreria: " + nombre);
-                if (rol == "administrador")
+                Usuario usuario = new Usuario();
+                string nombre = txtNombre.Text;
+                string pass = txtPassword.Text;
+                string rol;
+
+                conection.Open();
+                comando.Connection = conection;
+                comando.CommandText = "SELECT * FROM USUARIO WHERE nombre = @nombre and password = @pass";
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@nombre", nombre);
+                comando.Parameters.AddWithValue("@pass", pass);
+                SqlDataReader reader = comando.ExecuteReader();
+
+                if (reader.Read())
                 {
-                    Form2 form2 = new Form2();
-                    form2.Show();
-                    this.Hide();
+                    nombre = reader.GetString(1);
+                    pass = reader.GetString(2);
+                    rol = reader.GetString(3);
+                    MessageBox.Show("Bienvenido a la herreria: " + nombre);
+                    if (rol == "administrador")
+                    {
+                        Form2 form2 = new Form2(nombre);
+                        form2.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        Form3 form3 = new Form3(nombre);
+                        form3.Show();
+                        this.Hide();
+                    }
                 }
                 else
                 {
-                    Form3 form3 = new Form3();
-                    form3.Show();
-                    this.Hide();
+                    MessageBox.Show("Usuario o contraseña incorrectos");
                 }
-
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Usuario o contraseña incorrectos");
+                MessageBox.Show("Error al intentar iniciar sesión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conection.State == ConnectionState.Open)
+                {
+                    conection.Close();
+                }
             }
         }
     }

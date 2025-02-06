@@ -47,10 +47,8 @@
             this.equipamientoDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.equipamientoDataSet1 = new Herreria.EquipamientoDataSet1();
             this.eQUIPAMIENTOTableAdapter1 = new Herreria.EquipamientoDataSet1TableAdapters.EQUIPAMIENTOTableAdapter();
-            this.cbArmaduras = new System.Windows.Forms.ComboBox();
+            this.cbTipoEquipamiento = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btElaboracion = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.equipamientoDataSet)).BeginInit();
@@ -189,54 +187,36 @@
             // 
             this.eQUIPAMIENTOTableAdapter1.ClearBeforeFill = true;
             // 
-            // cbArmaduras
+            // cbTipoEquipamiento
             // 
-            this.cbArmaduras.FormattingEnabled = true;
-            this.cbArmaduras.Items.AddRange(new object[] {
+            this.cbTipoEquipamiento.FormattingEnabled = true;
+            this.cbTipoEquipamiento.Items.AddRange(new object[] {
             "Armadura ligera",
             "Armadura intermedia",
             "Armadura pesada",
             "Arma a distancia",
             "Arma cuerpo a cuerpo",
             "Escudos"});
-            this.cbArmaduras.Location = new System.Drawing.Point(784, 560);
-            this.cbArmaduras.Name = "cbArmaduras";
-            this.cbArmaduras.Size = new System.Drawing.Size(121, 24);
-            this.cbArmaduras.TabIndex = 2;
-            this.cbArmaduras.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbTipoEquipamiento.Location = new System.Drawing.Point(784, 560);
+            this.cbTipoEquipamiento.Name = "cbTipoEquipamiento";
+            this.cbTipoEquipamiento.Size = new System.Drawing.Size(121, 24);
+            this.cbTipoEquipamiento.TabIndex = 2;
+            this.cbTipoEquipamiento.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label
             // 
             this.label.AutoSize = true;
             this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(746, 529);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(219, 22);
+            this.label.Size = new System.Drawing.Size(201, 22);
             this.label.TabIndex = 3;
             this.label.Text = "Tipo Equipamiento:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(784, 624);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(785, 599);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "CANTIDAD:";
-            // 
             // btElaboracion
             // 
-            this.btElaboracion.Location = new System.Drawing.Point(779, 673);
+            this.btElaboracion.Location = new System.Drawing.Point(784, 601);
             this.btElaboracion.Name = "btElaboracion";
             this.btElaboracion.Size = new System.Drawing.Size(126, 23);
             this.btElaboracion.TabIndex = 6;
@@ -263,10 +243,8 @@
             this.ClientSize = new System.Drawing.Size(1118, 780);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btElaboracion);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.cbArmaduras);
+            this.Controls.Add(this.cbTipoEquipamiento);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Elaboracion";
@@ -303,10 +281,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn precioventaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pesoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox cbArmaduras;
+        private System.Windows.Forms.ComboBox cbTipoEquipamiento;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btElaboracion;
         private System.Windows.Forms.Button button1;
     }
