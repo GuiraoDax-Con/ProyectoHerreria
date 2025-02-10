@@ -33,6 +33,7 @@
             this.btElaborar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbAdmin = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btMateriaPrima
@@ -40,7 +41,7 @@
             this.btMateriaPrima.BackColor = System.Drawing.Color.Firebrick;
             this.btMateriaPrima.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMateriaPrima.ForeColor = System.Drawing.Color.White;
-            this.btMateriaPrima.Location = new System.Drawing.Point(327, 207);
+            this.btMateriaPrima.Location = new System.Drawing.Point(277, 157);
             this.btMateriaPrima.Name = "btMateriaPrima";
             this.btMateriaPrima.Size = new System.Drawing.Size(171, 41);
             this.btMateriaPrima.TabIndex = 2;
@@ -53,7 +54,7 @@
             this.btElaborar.BackColor = System.Drawing.Color.Firebrick;
             this.btElaborar.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btElaborar.ForeColor = System.Drawing.Color.White;
-            this.btElaborar.Location = new System.Drawing.Point(576, 207);
+            this.btElaborar.Location = new System.Drawing.Point(611, 157);
             this.btElaborar.Name = "btElaborar";
             this.btElaborar.Size = new System.Drawing.Size(138, 41);
             this.btElaborar.TabIndex = 3;
@@ -80,6 +81,19 @@
             this.lbAdmin.Size = new System.Drawing.Size(0, 25);
             this.lbAdmin.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(492, 206);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 41);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -87,6 +101,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1037, 636);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbAdmin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btElaborar);
@@ -104,5 +119,6 @@
         private System.Windows.Forms.Button btElaborar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbAdmin;
+        private System.Windows.Forms.Button button1;
     }
 }
